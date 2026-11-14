@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sitefactory preset gallery</title>
+<meta name="description" content="Visual preview of every sitefactory theme preset, built from ops/catalog/themes.yaml.">
+<style>
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { margin: 0 auto; padding: 1.5rem; max-width: 60rem; }
+h1 { margin-bottom: 0.25rem; }
+.note { color: color-mix(in srgb, currentColor 62%, transparent); margin-top: 0; }
+.cards { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1rem; }
+.card { border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+  border-radius: 0.5rem; padding: 1rem; position: relative; }
+.card h2 { margin: 0.25rem 0 0; font-size: 1.05rem; }
+.card .id, .card .desc, .card .links { font-size: 0.85rem; }
+.card .id { color: color-mix(in srgb, currentColor 55%, transparent);
+  margin: 0.1rem 0 0.5rem; font-family: ui-monospace, monospace; }
+.card .desc { margin: 0 0 0.75rem; }
+.tag { display: inline-block; border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  border-radius: 999px; padding: 0 0.5rem; font-size: 0.7rem; margin: 0 0.15rem 0.15rem 0; }
+.swatch { position: absolute; top: 1rem; right: 1rem; width: 1.1rem; height: 1.1rem;
+  border-radius: 999px; border: 1px solid rgba(0,0,0,0.2); }
+.links { margin: 0.5rem 0 0; }
+footer { margin-top: 2rem; font-size: 0.8rem; color: color-mix(in srgb, currentColor 62%, transparent); }
+</style>
+</head>
+<body>
+<h1>sitefactory preset gallery</h1>
+<p class="note">One preview per shipped theme preset: the factory demo home
+rendered with that preset's tokens, plus a figure specimen (real
+ImageRenderer output, ADR #84 figure tokens) and the block specimens (real
+composed output of every #128 block kind). Built by CI from
+<code>ops/catalog/themes.yaml</code>; order = catalog order. Previews are the
+home page only: their demo nav is inert (those pages are not part of a
+preview), and the catalog row / meta.yaml links open the snapshots bundled
+with this deploy.</p>
+<ul class="cards">
+      <li class="card">
+        <span class="swatch" style="background:#0161ef" aria-hidden="true"></span>
+        <h2><a href="presets/agency-vivid/">Agency vivid</a></h2>
+        <p class="id">agency-vivid</p>
+        <p class="desc">Clean white marketing look with an electric-blue primary, violet accent pop and soft-gray section alternation — the polished agency vibe of the AstroWind seed (the best-scored all-round backbone in the seed set).</p>
+        <p class="taxonomy"><span class="tag">light-white</span><span class="tag">sans-display-sans-body</span><span class="tag">roomy</span><span class="tag">energetic</span><span class="tag">subtle</span></p>
+        <p class="verticals"><span class="tag">agency</span><span class="tag">marketing</span><span class="tag">smb</span></p>
+        <p class="links">
+          <a href="presets/agency-vivid/" aria-label="Preview agency-vivid">preview</a> ·
+          <a href="catalog/themes.yaml" aria-label="Catalog row for agency-vivid">catalog row</a> ·
+          <a href="catalog/presets/agency-vivid/meta.yaml" aria-label="meta.yaml for agency-vivid">meta.yaml</a>
+        </p>
+      </li>
+      <li class="card">
+        <span class="swatch" style="background:#c8f14d" aria-hidden="true"></span>
+        <h2><a href="presets/bento-portfolio/">Bento portfolio</a></h2>
+        <p class="id">bento-portfolio</p>
+        <p class="desc">Warm-mist ground, graphite ink, lime brand blocks and distinctly rounded bento cards — the freelancer-portfolio look of the SWP seed (the freshest Astro 7 portfolio seed, mined for its bento IA and token file). Note: the lime accent is a block/chip color in the seed, not a text color — links stay graphite.</p>
+        <p class="taxonomy"><span class="tag">light-mist</span><span class="tag">grotesk-display-sans-body</span><span class="tag">comfortable</span><span class="tag">playful</span><span class="tag">subtle</span></p>
+        <p class="verticals"><span class="tag">portfolio</span><span class="tag">freelancer</span><span class="tag">creative</span></p>
+        <p class="links">
+          <a href="presets/bento-portfolio/" aria-label="Preview bento-portfolio">preview</a> ·
+          <a href="catalog/themes.yaml" aria-label="Catalog row for bento-portfolio">catalog row</a> ·
+          <a href="catalog/presets/bento-portfolio/meta.yaml" aria-label="meta.yaml for bento-portfolio">meta.yaml</a>
+        </p>
+      </li>
+      <li class="card">
+        <span class="swatch" style="background:#0d9488" aria-hidden="true"></span>
+        <h2><a href="presets/clinical-calm/">Clinical calm</a></h2>
+        <p class="id">clinical-calm</p>
+        <p class="desc">Cool off-white calm with a teal trust palette and soft 16px corners — the clinical/healthcare look (the only free inspectable clinic seed). Links use the seed's darker teal for contrast.</p>
+        <p class="taxonomy"><span class="tag">light-cool</span><span class="tag">sans-display-sans-body</span><span class="tag">comfortable</span><span class="tag">calm</span><span class="tag">subtle</span></p>
+        <p class="verticals"><span class="tag">clinic</span><span class="tag">healthcare</span><span class="tag">psychology</span></p>
+        <p class="links">
+          <a href="presets/clinical-calm/" aria-label="Preview clinical-calm">preview</a> ·
+          <a href="catalog/themes.yaml" aria-label="Catalog row for clinical-calm">catalog row</a> ·
+          <a href="catalog/presets/clinical-calm/meta.yaml" aria-label="meta.yaml for clinical-calm">meta.yaml</a>
+        </p>
+      </li>
+      <li class="card">
+        <span class="swatch" style="background:#dcfd35" aria-hidden="true"></span>
+        <h2><a href="presets/editorial-dark/">Editorial dark</a></h2>
+        <p class="id">editorial-dark</p>
+        <p class="desc">Dark navy-black ground, near-white type, one lime accent doing all the work — a type-led consultant/editorial look. Values pattern-mined from the Orrery seed; the seed's geometric webfont is referenced by name with system-only fallbacks (privacy-first: no font files ship).</p>
+        <p class="taxonomy"><span class="tag">dark-navy</span><span class="tag">sans-display-sans-body</span><span class="tag">airy</span><span class="tag">dramatic</span><span class="tag">subtle</span></p>
+        <p class="verticals"><span class="tag">editorial</span><span class="tag">consulting</span><span class="tag">smb</span></p>
+        <p class="links">
+          <a href="presets/editorial-dark/" aria-label="Preview editorial-dark">preview</a> ·
+          <a href="catalog/themes.yaml" aria-label="Catalog row for editorial-dark">catalog row</a> ·
+          <a href="catalog/presets/editorial-dark/meta.yaml" aria-label="meta.yaml for editorial-dark">meta.yaml</a>
+        </p>
+      </li>
+      <li class="card">
+        <span class="swatch" style="background:#005ea2" aria-hidden="true"></span>
+        <h2><a href="presets/gov-accessible/">Government accessible</a></h2>
+        <p class="id">gov-accessible</p>
+        <p class="desc">The plain-language government look: white and base-gray surfaces, federal blue links, near-square cards and a 68ex text measure per the USWDS default — stock USWDS 3.x palette as shipped (unmodified) by the seed. The seed's Section 508/WCAG 2.1 AA orientation is a pattern to re-verify per site, not a property of the tokens alone.</p>
+        <p class="taxonomy"><span class="tag">light-neutral</span><span class="tag">sans-display-sans-body</span><span class="tag">comfortable</span><span class="tag">institutional</span><span class="tag">none</span></p>
+        <p class="verticals"><span class="tag">government</span><span class="tag">civic</span><span class="tag">smb</span></p>
+        <p class="links">
+          <a href="presets/gov-accessible/" aria-label="Preview gov-accessible">preview</a> ·
+          <a href="catalog/themes.yaml" aria-label="Catalog row for gov-accessible">catalog row</a> ·
+          <a href="catalog/presets/gov-accessible/meta.yaml" aria-label="meta.yaml for gov-accessible">meta.yaml</a>
+        </p>
+      </li>
+      <li class="card">
+        <span class="swatch" style="background:#0e7268" aria-hidden="true"></span>
+        <h2><a href="presets/journalism-default/">Journalism default</a></h2>
+        <p class="id">journalism-default</p>
+        <p class="desc">The factory's founding look: cool paper background, ink-navy text, teal accent, serif display over sans body. Ship-safe for investigative and newsroom sites (privacy-first: system fonts only).</p>
+        <p class="taxonomy"><span class="tag">light-paper</span><span class="tag">serif-display-sans-body</span><span class="tag">comfortable</span><span class="tag">sober</span><span class="tag">none</span></p>
+        <p class="verticals"><span class="tag">journalism</span></p>
+        <p class="links">
+          <a href="presets/journalism-default/" aria-label="Preview journalism-default">preview</a> ·
+          <a href="catalog/themes.yaml" aria-label="Catalog row for journalism-default">catalog row</a> ·
+          <a href="catalog/presets/journalism-default/meta.yaml" aria-label="meta.yaml for journalism-default">meta.yaml</a>
+        </p>
+      </li>
+      <li class="card">
+        <span class="swatch" style="background:#006cac" aria-hidden="true"></span>
+        <h2><a href="presets/minimal-academic/">Minimal academic</a></h2>
+        <p class="id">minimal-academic</p>
+        <p class="desc">Paper-white minimalism with a mono-flavored display face, graphite ink and one restrained blue accent — the scholarly article look of the AstroPaper seed, kept to a narrow reading column (48rem) with near-square corners.</p>
+        <p class="taxonomy"><span class="tag">light-paper</span><span class="tag">mono-display-sans-body</span><span class="tag">compact</span><span class="tag">scholarly</span><span class="tag">none</span></p>
+        <p class="verticals"><span class="tag">academic</span><span class="tag">editorial</span><span class="tag">blog</span></p>
+        <p class="links">
+          <a href="presets/minimal-academic/" aria-label="Preview minimal-academic">preview</a> ·
+          <a href="catalog/themes.yaml" aria-label="Catalog row for minimal-academic">catalog row</a> ·
+          <a href="catalog/presets/minimal-academic/meta.yaml" aria-label="meta.yaml for minimal-academic">meta.yaml</a>
+        </p>
+      </li>
+      <li class="card">
+        <span class="swatch" style="background:light-dark(#c8102e,#f0596a)" aria-hidden="true"></span>
+        <h2><a href="presets/newsroom/">Newsroom</a></h2>
+        <p class="id">newsroom</p>
+        <p class="desc">The classic newspaper look: warm newsprint paper, dense ink type, one spot red for section labels and lead-ins, square corners, columns split by hairline rules. Serif display (Source Serif 4) over a Franklin body (Libre Franklin). Colors keep the seed's light-dark() pairs, so a site that opts into a dark color-scheme gets the seed's night edition; the factory declares no color-scheme, so the default render is the light paper look.</p>
+        <p class="taxonomy"><span class="tag">light-paper</span><span class="tag">serif-display-sans-body</span><span class="tag">comfortable</span><span class="tag">sober</span><span class="tag">none</span></p>
+        <p class="verticals"><span class="tag">journalism</span><span class="tag">newsroom</span><span class="tag">magazine</span></p>
+        <p class="links">
+          <a href="presets/newsroom/" aria-label="Preview newsroom">preview</a> ·
+          <a href="catalog/themes.yaml" aria-label="Catalog row for newsroom">catalog row</a> ·
+          <a href="catalog/presets/newsroom/meta.yaml" aria-label="meta.yaml for newsroom">meta.yaml</a>
+        </p>
+      </li>
+      <li class="card">
+        <span class="swatch" style="background:#ff7a29" aria-hidden="true"></span>
+        <h2><a href="presets/trades-bold/">Trades bold</a></h2>
+        <p class="id">trades-bold</p>
+        <p class="desc">Dark-navy ground with a bold orange accent and chunky humanist type — confident trade-business energy (the Craftline seed's look, minus its scroll-story 3D theatrics). Lime-green success tone doubles as the highlight color.</p>
+        <p class="taxonomy"><span class="tag">dark-navy</span><span class="tag">sans-display-sans-body</span><span class="tag">roomy</span><span class="tag">bold</span><span class="tag">expressive</span></p>
+        <p class="verticals"><span class="tag">trades</span><span class="tag">smb</span></p>
+        <p class="links">
+          <a href="presets/trades-bold/" aria-label="Preview trades-bold">preview</a> ·
+          <a href="catalog/themes.yaml" aria-label="Catalog row for trades-bold">catalog row</a> ·
+          <a href="catalog/presets/trades-bold/meta.yaml" aria-label="meta.yaml for trades-bold">meta.yaml</a>
+        </p>
+      </li>
+</ul>
+<footer>Pick a look, then apply it with one field — <code>theme_preset</code>
+in your site config, keyed by the card id; the data behind every card is the
+bundled snapshot (<code>catalog/themes.yaml</code>). Dark previews render
+their own tokens, unwrapped.</footer>
+</body>
+</html>
