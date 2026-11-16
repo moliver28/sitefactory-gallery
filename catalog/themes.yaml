@@ -1,0 +1,140 @@
+# Theme catalog (plan P6.2) — DATA ONLY. One row per shipped preset; every
+# value is transcribed from packages/theme/tokens/presets/<id>/meta.yaml.
+# packages/theme/test/catalog-parity.test.ts fails CI if either side drifts.
+#
+# Descriptive metadata, not behavior promises: attributes (palette_type,
+# type_pairing, density, mood, motion) record the seed-derived CHARACTER of
+# each look. Preset tokens are colors/type/spacing only — no preset ships
+# animation or shadow behavior (momus P6.3 rider).
+#
+# Fixed taxonomy: palette_type × type_pairing × density × mood × motion.
+# License provenance prose lives in each meta.yaml `source.attribution`;
+# the full seed audit is ops/theme-seeds.yaml. Apply instructions:
+# README.md next to this file.
+
+presets:
+  - id: agency-vivid
+    title: Agency vivid
+    verticals: [agency, marketing, smb]
+    attributes:
+      palette_type: light-white
+      type_pairing: sans-display-sans-body
+      density: roomy
+      mood: energetic
+      motion: subtle
+    source:
+      seed: https://github.com/arthelokyo/astrowind
+      license: MIT
+    screenshot: ops/catalog/screenshots/agency-vivid.png
+
+  - id: bento-portfolio
+    title: Bento portfolio
+    verticals: [portfolio, freelancer, creative]
+    attributes:
+      palette_type: light-mist
+      type_pairing: grotesk-display-sans-body
+      density: comfortable
+      mood: playful
+      motion: subtle
+    source:
+      seed: https://github.com/Scintillaweb/swp-freelancer-portfolio
+      license: MIT
+    screenshot: ops/catalog/screenshots/bento-portfolio.png
+
+  - id: clinical-calm
+    title: Clinical calm
+    verticals: [clinic, healthcare, psychology]
+    attributes:
+      palette_type: light-cool
+      type_pairing: sans-display-sans-body
+      density: comfortable
+      mood: calm
+      motion: subtle
+    source:
+      seed: https://github.com/web-stacked/healthcare-astro-theme
+      license: MIT
+    screenshot: ops/catalog/screenshots/clinical-calm.png
+
+  - id: editorial-dark
+    title: Editorial dark
+    verticals: [editorial, consulting, smb]
+    attributes:
+      palette_type: dark-navy
+      type_pairing: sans-display-sans-body
+      density: airy
+      mood: dramatic
+      motion: subtle
+    source:
+      seed: https://github.com/formgong/orrery-astro-theme
+      license: MIT
+    screenshot: ops/catalog/screenshots/editorial-dark.png
+
+  - id: gov-accessible
+    title: Government accessible
+    verticals: [government, civic, smb]
+    attributes:
+      palette_type: light-neutral
+      type_pairing: sans-display-sans-body
+      density: comfortable
+      mood: institutional
+      motion: none
+    source:
+      seed: https://github.com/ctrimm/astro-gov-starter
+      license: MIT
+    screenshot: ops/catalog/screenshots/gov-accessible.png
+
+  - id: journalism-default
+    title: Journalism default
+    verticals: [journalism]
+    attributes:
+      palette_type: light-paper
+      type_pairing: serif-display-sans-body
+      density: comfortable
+      mood: sober
+      motion: none
+    source:
+      seed: sitefactory-original
+      license: MIT
+    screenshot: ops/catalog/screenshots/journalism-default.png
+
+  - id: minimal-academic
+    title: Minimal academic
+    verticals: [academic, editorial, blog]
+    attributes:
+      palette_type: light-paper
+      type_pairing: mono-display-sans-body
+      density: compact
+      mood: scholarly
+      motion: none
+    source:
+      seed: https://github.com/satnaing/astro-paper
+      license: MIT
+    screenshot: ops/catalog/screenshots/minimal-academic.png
+
+  - id: newsroom
+    title: Newsroom
+    verticals: [journalism, newsroom, magazine]
+    attributes:
+      palette_type: light-paper
+      type_pairing: serif-display-sans-body
+      density: comfortable
+      mood: sober
+      motion: none
+    source:
+      seed: https://github.com/ondelva/astro-theme-masthead
+      license: MIT
+    screenshot: ops/catalog/screenshots/newsroom.png
+
+  - id: trades-bold
+    title: Trades bold
+    verticals: [trades, smb]
+    attributes:
+      palette_type: dark-navy
+      type_pairing: sans-display-sans-body
+      density: roomy
+      mood: bold
+      motion: expressive
+    source:
+      seed: https://github.com/formgong/craftline-astro-theme
+      license: MIT
+    screenshot: ops/catalog/screenshots/trades-bold.png
